@@ -5,6 +5,26 @@ public class Rectangle {
         this.height = height;
         this.width = width;
     }
+    
+    public void SetHeight(int height)
+    {
+        this.height = height;
+    }
+
+    public int GetHeight()
+    {
+        return this.height;
+    }
+
+    public void SetWidth(int width)
+    {
+        this.width = width;
+    }
+    
+    public int GetWidth()
+    {
+        return this.width;
+    }
 
     public int computeArea() throws RuntimeException {
         if (this.height < 0) {
