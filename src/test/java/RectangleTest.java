@@ -6,6 +6,37 @@ import static org.junit.Assert.*;
 public class RectangleTest {
 
     @Test
+    public void getHeightMethodTest() {
+        int height = 1, width = 2;
+        Rectangle rectangle = new Rectangle(height, width);
+        assertEquals(1, rectangle.GetHeight());
+    }
+    
+    @Test
+    public void getWidthMethodTest() {
+        int height = 1, width = 2;
+        Rectangle rectangle = new Rectangle(height, width);
+        assertEquals(2, rectangle.GetWidth());
+    }
+    
+    @Test
+    public void setHeightMethodTest() {
+        int height = 1, width = 5;
+        Rectangle rectangle = new Rectangle(height, width);
+        rectangle.SetHeight(2);
+        assertEquals(2, rectangle.GetHeight());
+    }
+    
+    @Test
+    public void setWidthMethodTest() {
+        int height = 1, width = 5;
+        Rectangle rectangle = new Rectangle(height, width);
+        rectangle.SetWidth(4);
+        assertEquals(4, rectangle.GetWidth());
+    }
+    
+    
+    @Test
     public void computeAreaNormal() {
         int height = 3, width = 4;
         int expectedArea = 12;
