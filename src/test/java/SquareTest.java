@@ -30,7 +30,7 @@ public class SquareTest {
 
     @Test
     public void computeAreaNegSide() {
-        int side = 2;
+        int side = -2;
         try {
             Square square = new Square(side);
             square.computeArea();
