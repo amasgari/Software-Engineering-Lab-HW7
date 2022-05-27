@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class RectangleTest {
+public class SquareTest {
 
     @Test
     public void getSideMethodTest() {
@@ -16,7 +16,7 @@ public class RectangleTest {
     public void setSideMethodTest() {
         int side = 1;
         Square square = new Square(side);
-        rectangle.SetSide(2);
+        square.SetSide(2);
         assertEquals(2, square.GetSide());
     }
 
